@@ -33,7 +33,7 @@ class AuthController extends Controller
             'id'            => auth()->id(),
             'email'         => auth()->user()->email,
             'token_type'    => 'bearer',
-            'expires_in'    => 600000
+            'expires_in'    => 600
         ]);
     }
 

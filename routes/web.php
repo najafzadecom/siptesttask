@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 
-Route::controller(AuthController::class)->group(function () {
+Route::controller(AuthController::class)->middleware('cors')->group(function () {
     Route::post('signin', 'signIn');
     Route::post('signup', 'signUp');
     Route::get('info', 'info');
